@@ -347,7 +347,7 @@ public class CadastroClienteView extends javax.swing.JFrame {
     private void preencheCampos() {
         try {
             txtNome.setText(objCliente.getNmcliente());
-            objCliente.setCpfcnpj(Integer.parseInt(txtCpfCnpj.getText()));
+            objCliente.setCpfcnpj(txtCpfCnpj.getText());
             txtTelefone.setText(objCliente.getTelefone());
             txtEndereco.setText(objCliente.getEndereco());
             txtUf.setText(objCliente.getUf());
@@ -391,7 +391,7 @@ public class CadastroClienteView extends javax.swing.JFrame {
         try {
             objCliente = new Cliente();
             objCliente.setNmcliente(txtNome.getText());
-            objCliente.setCpfcnpj(Integer.parseInt(txtCpfCnpj.getText()));
+            objCliente.setCpfcnpj(txtCpfCnpj.getText());
             objCliente.setTelefone(txtTelefone.getText());
             objCliente.setEndereco(txtEndereco.getText());
             
